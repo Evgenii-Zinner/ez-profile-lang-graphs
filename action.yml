@@ -1,5 +1,5 @@
 name: "EZ Profile Language Graphs"
-description: "Generate animated SVG GitHub language charts grouped into 5 engineering domains (Radial Sunburst, Radar, Packed Bubbles, Treemap)."
+description: "Generate animated domain-grouped GitHub language SVG charts (Radial Sunburst, Radar, Packed Bubbles, Treemap)."
 author: "Evgenii-Zinner"
 branding:
   icon: "pie-chart"
