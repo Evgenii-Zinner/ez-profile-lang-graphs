@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="240" viewBox="0 0 540 240">
+  <style>
+    text { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes arcpop {
+      from { opacity: 0; transform: scale(0.25); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes petalpop {
+      from { opacity: 0; transform: scale(0.45); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .row { opacity: 0; animation: fadein 0.5s ease forwards; }
+    .arc { opacity: 0; transform-origin: 0px 0px; animation: arcpop 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+    .petal { opacity: 0; transform-origin: 0px 0px; animation: petalpop 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+  </style>
+  <rect x="0.5" y="0.5" width="539" height="239" rx="10" fill="#0d1117" stroke="none"/>
+  <g transform="translate(136, 120)">
+    <circle cx="0" cy="0" r="54" fill="none" stroke="#30363d" stroke-opacity="0.4" stroke-dasharray="2 3" stroke-width="0.9"/>
+    <circle cx="0" cy="0" r="82" fill="none" stroke="#30363d" stroke-opacity="0.4" stroke-dasharray="2 3" stroke-width="0.9"/>
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#30363d" stroke-opacity="0.4" stroke-dasharray="2 3" stroke-width="0.9"/>
+    <line x1="0.0" y1="-20.0" x2="0.0" y2="-110.0" stroke="#30363d" stroke-opacity="0.45" stroke-width="0.9"/>
+    <line x1="20.0" y1="-0.0" x2="110.0" y2="-0.0" stroke="#30363d" stroke-opacity="0.45" stroke-width="0.9"/>
+    <line x1="0.0" y1="20.0" x2="0.0" y2="110.0" stroke="#30363d" stroke-opacity="0.45" stroke-width="0.9"/>
+    <line x1="-20.0" y1="0.0" x2="-110.0" y2="0.0" stroke="#30363d" stroke-opacity="0.45" stroke-width="0.9"/>
+    <path class="arc" style="animation-delay:0.08s" d="M1.008,-44.8A3,3,0,0,1,4.275,-47.721A47.912,47.912,0,0,1,47.721,-4.275A3,3,0,0,1,44.8,-1.008L22.798,-0.513A3,3,0,0,1,19.765,-3.054A20,20,0,0,0,3.054,-19.765A3,3,0,0,1,0.513,-22.798Z" fill="#3178c6" fill-opacity="0.9" stroke="#0d1117" stroke-width="1.2"><title>Web: 30.1%</title></path>
+    <path class="arc" style="animation-delay:0.14s" d="M48.896,1.1A3,3,0,0,1,51.818,4.351A52,52,0,0,1,4.351,51.818A3,3,0,0,1,1.1,48.896L0.513,22.798A3,3,0,0,1,3.054,19.765A20,20,0,0,0,19.765,3.054A3,3,0,0,1,22.798,0.513Z" fill="#00b4ab" fill-opacity="0.9" stroke="#0d1117" stroke-width="1.2"><title>Mobile: 62.9%</title></path>
+    <path class="arc" style="animation-delay:0.20s" d="M-0.714,31.725A3,3,0,0,1,-4.063,34.637A34.875,34.875,0,0,1,-34.637,4.063A3,3,0,0,1,-31.725,0.714L-22.798,0.513A3,3,0,0,1,-19.765,3.054A20,20,0,0,0,-3.054,19.765A3,3,0,0,1,-0.513,22.798Z" fill="#f74c00" fill-opacity="0.9" stroke="#0d1117" stroke-width="1.2"><title>Systems: 0.0%</title></path>
+    <path class="arc" style="animation-delay:0.26s" d="M-39.223,-0.883A3,3,0,0,1,-42.141,-4.178A42.347,42.347,0,0,1,-4.178,-42.141A3,3,0,0,1,-0.883,-39.223L-0.513,-22.798A3,3,0,0,1,-3.054,-19.765A20,20,0,0,0,-19.765,-3.054A3,3,0,0,1,-22.798,-0.513Z" fill="#a371f7" fill-opacity="0.9" stroke="#0d1117" stroke-width="1.2"><title>Backend: 7.0%</title></path>
+    <path class="petal" style="animation-delay:0.22s" d="M2.743,-87.045A3,3,0,0,1,5.939,-89.944A90.14,90.14,0,0,1,31.797,-84.345A3,3,0,0,1,33.508,-80.384L20.326,-48.76A3,3,0,0,1,16.561,-47.084A49.912,49.912,0,0,0,4.398,-49.718A3,3,0,0,1,1.664,-52.801Z" fill="#3178c6" fill-opacity="0.95" stroke="#0d1117" stroke-width="1.1"><title>TypeScript: 20.1%</title></path>
+    <path class="petal" style="animation-delay:0.25s" d="M31.809,-72.601A3,3,0,0,1,35.864,-74.097A82.32,82.32,0,0,1,55.421,-60.87A3,3,0,0,1,55.541,-56.55L37.016,-37.689A3,3,0,0,1,32.899,-37.535A49.912,49.912,0,0,0,22.59,-44.507A3,3,0,0,1,21.2,-48.386Z" fill="#f1e05a" fill-opacity="0.95" stroke="#0d1117" stroke-width="1.1"><title>JavaScript: 9.1%</title></path>
+    <path class="petal" style="animation-delay:0.28s" d="M45.82,-45.002A3,3,0,0,1,50.158,-44.862A67.294,67.294,0,0,1,60.31,-29.852A3,3,0,0,1,58.825,-25.774L48.386,-21.2A3,3,0,0,1,44.507,-22.59A49.912,49.912,0,0,0,37.535,-32.899A3,3,0,0,1,37.689,-37.016Z" fill="#663399" fill-opacity="0.95" stroke="#0d1117" stroke-width="1.1"><title>CSS: 0.6%</title></path>
+    <path class="petal" style="animation-delay:0.31s" d="M57.212,-23.849A3,3,0,0,1,61.188,-22.099A65.056,65.056,0,0,1,64.849,-5.19A3,3,0,0,1,61.953,-1.952L52.801,-1.664A3,3,0,0,1,49.718,-4.398A49.912,49.912,0,0,0,47.084,-16.561A3,3,0,0,1,48.76,-20.326Z" fill="#e34c26" fill-opacity="0.95" stroke="#0d1117" stroke-width="1.1"><title>HTML: 0.3%</title></path>
+    <path class="petal" style="animation-delay:0.28s" d="M106.931,2.406A3,3,0,0,1,109.86,5.557A110,110,0,0,1,5.557,109.86A3,3,0,0,1,2.406,106.931L1.281,56.907A3,3,0,0,1,4.055,53.848A54,54,0,0,0,53.848,4.055A3,3,0,0,1,56.907,1.281Z" fill="#00B4AB" fill-opacity="0.95" stroke="#0d1117" stroke-width="1.1"><title>Dart: 62.9%</title></path>
+    <path class="petal" style="animation-delay:0.34s" d="M-0.992,44.095A3,3,0,0,1,-4.262,47.015A47.208,47.208,0,0,1,-47.015,4.262A3,3,0,0,1,-44.095,0.992L-39.752,0.895A3,3,0,0,1,-36.699,3.601A36.875,36.875,0,0,0,-3.601,36.699A3,3,0,0,1,-0.895,39.752Z" fill="#5686a5" fill-opacity="0.95" stroke="#0d1117" stroke-width="1.1"><title>GLSL: 0.0%</title></path>
+    <path class="petal" style="animation-delay:0.40s" d="M-67.165,-2.116A3,3,0,0,1,-70.062,-5.343A70.265,70.265,0,0,1,-52.276,-46.951A3,3,0,0,1,-47.942,-47.087L-33.712,-33.11A3,3,0,0,1,-33.544,-29.008A44.347,44.347,0,0,0,-44.148,-4.202A3,3,0,0,1,-47.229,-1.488Z" fill="#7355dd" fill-opacity="0.95" stroke="#0d1117" stroke-width="1.1"><title>C#: 3.8%</title></path>
+    <path class="petal" style="animation-delay:0.43s" d="M-46.434,-47.277A3,3,0,0,1,-46.297,-51.613A69.334,69.334,0,0,1,-5.316,-69.13A3,3,0,0,1,-2.087,-66.233L-1.488,-47.229A3,3,0,0,1,-4.202,-44.148A44.347,44.347,0,0,0,-29.008,-33.544A3,3,0,0,1,-33.11,-33.712Z" fill="#701516" fill-opacity="0.95" stroke="#0d1117" stroke-width="1.1"><title>Ruby: 3.2%</title></path>
+  </g>
+  <g transform="translate(274, 62)"><g class="row" style="animation-delay:0.15s">
+      <rect width="10" height="10" rx="3" y="-9" fill="#00b4ab"/>
+      <text x="18" y="0" font-size="12.5" font-weight="600" fill="#c9d1d9">Mobile</text>
+      <text x="242" y="0" text-anchor="end" font-size="12.5" font-weight="600" fill="#e6edf3">62.9%</text>
+      <text x="18" y="14" font-size="10.5" fill="#8b949e">Dart</text>
+    </g></g>
+  <g transform="translate(274, 100)"><g class="row" style="animation-delay:0.24s">
+      <rect width="10" height="10" rx="3" y="-9" fill="#3178c6"/>
+      <text x="18" y="0" font-size="12.5" font-weight="600" fill="#c9d1d9">Web</text>
+      <text x="242" y="0" text-anchor="end" font-size="12.5" font-weight="600" fill="#e6edf3">30.1%</text>
+      <text x="18" y="14" font-size="10.5" fill="#8b949e">TypeScript · JavaScript · CSS · H…</text>
+    </g></g>
+  <g transform="translate(274, 138)"><g class="row" style="animation-delay:0.33s">
+      <rect width="10" height="10" rx="3" y="-9" fill="#a371f7"/>
+      <text x="18" y="0" font-size="12.5" font-weight="600" fill="#c9d1d9">Backend</text>
+      <text x="242" y="0" text-anchor="end" font-size="12.5" font-weight="600" fill="#e6edf3">7.0%</text>
+      <text x="18" y="14" font-size="10.5" fill="#8b949e">C# · Ruby</text>
+    </g></g>
+  <g transform="translate(274, 176)"><g class="row" style="animation-delay:0.42s">
+      <rect width="10" height="10" rx="3" y="-9" fill="#f74c00"/>
+      <text x="18" y="0" font-size="12.5" font-weight="600" fill="#c9d1d9">Systems</text>
+      <text x="242" y="0" text-anchor="end" font-size="12.5" font-weight="600" fill="#e6edf3">0.0%</text>
+      <text x="18" y="14" font-size="10.5" fill="#8b949e">GLSL</text>
+    </g></g>
+</svg>

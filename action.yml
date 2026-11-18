@@ -1,0 +1,40 @@
+name: "EZ Profile Language Graphs"
+description: "Generate animated SVG GitHub language charts grouped into 5 engineering domains (Radial Sunburst, Radar, Packed Bubbles, Treemap)."
+author: "Evgenii-Zinner"
+branding:
+  icon: "pie-chart"
+  color: "blue"
+
+inputs:
+  username:
+    description: "GitHub username to analyze (defaults to repository owner)"
+    required: false
+    default: ""
+  token:
+    description: "GitHub token for GraphQL API (defaults to GITHUB_TOKEN)"
+    required: false
+    default: ""
+  layout:
+    description: "Chart layout: sunburst, radar (or spider), bubbles, treemap"
+    required: false
+    default: "sunburst"
+  theme:
+    description: "Color theme: dark or light"
+    required: false
+    default: "dark"
+  hide_border:
+    description: "Hide outer card border (true or false)"
+    required: false
+    default: "true"
+  include_private:
+    description: "Include private repositories (requires a PAT with repo read scope)"
+    required: false
+    default: "false"
+  output:
+    description: "Output SVG file path"
+    required: false
+    default: "top-langs.svg"
+
+runs:
+  using: "node20"
+  main: "dist/action.mjs"

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="240" viewBox="0 0 540 240">
+  <style>
+    text { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes radarpop {
+      from { opacity: 0; transform: scale(0.15); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes dotpop {
+      from { opacity: 0; transform: scale(0.2); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .row { opacity: 0; animation: fadein 0.45s ease forwards; }
+    .axis-label { opacity: 0; animation: fadein 0.5s ease 0.1s forwards; }
+    .radar-poly { opacity: 0; transform-origin: 0px 0px; animation: radarpop 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.12s forwards; }
+    .dot { opacity: 0; transform-box: fill-box; transform-origin: center; animation: dotpop 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+  </style>
+  <rect x="0.5" y="0.5" width="539" height="239" rx="10" fill="#0d1117" stroke="none"/>
+  <g transform="translate(160, 126)">
+    <polygon points="0.0,-18.0 17.1,-5.6 10.6,14.6 -10.6,14.6 -17.1,-5.6" fill="none" stroke="#30363d" stroke-width="0.9"/>
+    <polygon points="0.0,-36.0 34.2,-11.1 21.2,29.1 -21.2,29.1 -34.2,-11.1" fill="none" stroke="#30363d" stroke-width="0.9"/>
+    <polygon points="0.0,-54.0 51.4,-16.7 31.7,43.7 -31.7,43.7 -51.4,-16.7" fill="none" stroke="#30363d" stroke-width="0.9"/>
+    <polygon points="0.0,-72.0 68.5,-22.2 42.3,58.2 -42.3,58.2 -68.5,-22.2" fill="none" stroke="#30363d" stroke-width="0.9"/>
+    <line x1="0" y1="0" x2="0.0" y2="-72.0" stroke="#30363d" stroke-opacity="0.6" stroke-width="0.9"/>
+    <line x1="0" y1="0" x2="68.5" y2="-22.2" stroke="#30363d" stroke-opacity="0.6" stroke-width="0.9"/>
+    <line x1="0" y1="0" x2="42.3" y2="58.2" stroke="#30363d" stroke-opacity="0.6" stroke-width="0.9"/>
+    <line x1="0" y1="0" x2="-42.3" y2="58.2" stroke="#30363d" stroke-opacity="0.6" stroke-width="0.9"/>
+    <line x1="0" y1="0" x2="-68.5" y2="-22.2" stroke="#30363d" stroke-opacity="0.6" stroke-width="0.9"/>
+    <polygon class="radar-poly" points="0.0,-55.6 68.5,-22.2 5.1,7.0 -19.6,27.0 -4.1,-1.3" fill="#58a6ff" fill-opacity="0.26" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round"/>
+    <circle class="dot" style="animation-delay:0.28s" cx="0.0" cy="-55.6" r="4" fill="#3178c6" stroke="#0d1117" stroke-width="1.5"><title>Web: 30.1%</title></circle>
+    <circle class="dot" style="animation-delay:0.34s" cx="68.5" cy="-22.2" r="4" fill="#00b4ab" stroke="#0d1117" stroke-width="1.5"><title>Mobile: 62.9%</title></circle>
+    <circle class="dot" style="animation-delay:0.40s" cx="5.1" cy="7.0" r="4" fill="#f74c00" stroke="#0d1117" stroke-width="1.5"><title>Systems: 0.0%</title></circle>
+    <circle class="dot" style="animation-delay:0.46s" cx="-19.6" cy="27.0" r="4" fill="#a371f7" stroke="#0d1117" stroke-width="1.5"><title>Backend: 7.0%</title></circle>
+    <circle class="dot" style="animation-delay:0.52s" cx="-4.1" cy="-1.3" r="4" fill="#3fb950" stroke="#0d1117" stroke-width="1.5"><title>Data &amp; Ops: 0.0%</title></circle>
+    <text class="axis-label" x="0.0" y="-84.0" text-anchor="middle" font-size="11" font-weight="600" fill="#c9d1d9">Web</text>
+    <text class="axis-label" x="76.5" y="-19.2" text-anchor="start" font-size="11" font-weight="600" fill="#c9d1d9">Mobile</text>
+    <text class="axis-label" x="50.3" y="70.2" text-anchor="start" font-size="11" font-weight="600" fill="#c9d1d9">Systems</text>
+    <text class="axis-label" x="-50.3" y="70.2" text-anchor="end" font-size="11" font-weight="600" fill="#c9d1d9">Backend</text>
+    <text class="axis-label" x="-76.5" y="-19.2" text-anchor="end" font-size="11" font-weight="600" fill="#c9d1d9">Data &amp; Ops</text>
+  </g>
+  <g transform="translate(304, 54)"><g class="row" style="animation-delay:0.14s">
+      <circle cx="5" cy="-4" r="4.5" fill="#00B4AB"/>
+      <text x="17" y="0" font-size="12" font-weight="600" fill="#c9d1d9">Dart</text>
+      <text x="212" y="0" text-anchor="end" font-size="12" font-weight="600" fill="#e6edf3">62.9%</text>
+    </g></g>
+  <g transform="translate(304, 82)"><g class="row" style="animation-delay:0.21s">
+      <circle cx="5" cy="-4" r="4.5" fill="#3178c6"/>
+      <text x="17" y="0" font-size="12" font-weight="600" fill="#c9d1d9">TypeScript</text>
+      <text x="212" y="0" text-anchor="end" font-size="12" font-weight="600" fill="#e6edf3">20.1%</text>
+    </g></g>
+  <g transform="translate(304, 110)"><g class="row" style="animation-delay:0.28s">
+      <circle cx="5" cy="-4" r="4.5" fill="#f1e05a"/>
+      <text x="17" y="0" font-size="12" font-weight="600" fill="#c9d1d9">JavaScript</text>
+      <text x="212" y="0" text-anchor="end" font-size="12" font-weight="600" fill="#e6edf3">9.1%</text>
+    </g></g>
+  <g transform="translate(304, 138)"><g class="row" style="animation-delay:0.35s">
+      <circle cx="5" cy="-4" r="4.5" fill="#7355dd"/>
+      <text x="17" y="0" font-size="12" font-weight="600" fill="#c9d1d9">C#</text>
+      <text x="212" y="0" text-anchor="end" font-size="12" font-weight="600" fill="#e6edf3">3.8%</text>
+    </g></g>
+  <g transform="translate(304, 166)"><g class="row" style="animation-delay:0.42s">
+      <circle cx="5" cy="-4" r="4.5" fill="#701516"/>
+      <text x="17" y="0" font-size="12" font-weight="600" fill="#c9d1d9">Ruby</text>
+      <text x="212" y="0" text-anchor="end" font-size="12" font-weight="600" fill="#e6edf3">3.2%</text>
+    </g></g>
+  <g transform="translate(304, 194)"><g class="row" style="animation-delay:0.49s">
+      <circle cx="5" cy="-4" r="4.5" fill="#663399"/>
+      <text x="17" y="0" font-size="12" font-weight="600" fill="#c9d1d9">CSS</text>
+      <text x="212" y="0" text-anchor="end" font-size="12" font-weight="600" fill="#e6edf3">0.6%</text>
+    </g></g>
+</svg>

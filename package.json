@@ -1,0 +1,26 @@
+{
+  "name": "ez-profile-lang-graphs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "GitHub Action generating animated domain-grouped language SVG charts (Radial Sunburst, Radar, Packed Bubbles, Treemap)",
+  "repository": "https://github.com/Evgenii-Zinner/ez-profile-lang-graphs",
+  "type": "module",
+  "scripts": {
+    "build": "bun build src/action.ts --target=node --outfile=dist/action.mjs",
+    "generate": "bun src/action.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "biome check .",
+    "check:fix": "biome check --write ."
+  },
+  "dependencies": {
+    "d3-hierarchy": "^3.1.2",
+    "d3-shape": "^3.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/d3-hierarchy": "^3.1.7",
+    "@types/d3-shape": "^3.1.7",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.3"
+  }
+}

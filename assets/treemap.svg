@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="240" viewBox="0 0 540 240">
+  <style>
+    text { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    @keyframes tilepop {
+      from { opacity: 0; transform: scale(0.94); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .tile { opacity: 0; transform-box: fill-box; transform-origin: center; animation: tilepop 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+  </style>
+  <rect x="0.5" y="0.5" width="539" height="239" rx="10" fill="#0d1117" stroke="none"/>
+  <g transform="translate(18, 18)">
+    <g class="tile" style="animation-delay:0.08s">
+      <rect x="4" y="0" width="247" height="200" rx="6" fill="#21262d" stroke="#30363d" stroke-width="0.8"/>
+      <circle cx="13" cy="10" r="3" fill="#00b4ab"/><text x="20" y="13.5" font-size="10.5" font-weight="700" fill="#8b949e">Mobile 62.9%</text>
+    </g>
+    <g class="tile" style="animation-delay:0.14s">
+      <rect x="254" y="0" width="183" height="200" rx="6" fill="#21262d" stroke="#30363d" stroke-width="0.8"/>
+      <circle cx="263" cy="10" r="3" fill="#3178c6"/><text x="270" y="13.5" font-size="10.5" font-weight="700" fill="#8b949e">Web 30.1%</text>
+    </g>
+    <g class="tile" style="animation-delay:0.20s">
+      <rect x="440" y="0" width="60" height="198" rx="6" fill="#21262d" stroke="#30363d" stroke-width="0.8"/>
+      <circle cx="449" cy="10" r="3" fill="#a371f7"/><text x="456" y="13.5" font-size="10.5" font-weight="700" fill="#8b949e">Backe…</text>
+    </g>
+    
+    <g class="tile" style="animation-delay:0.14s">
+      <title>Dart: 62.9%</title>
+      <rect x="8" y="19" width="239" height="177" rx="4" fill="#00B4AB" fill-opacity="0.92"/>
+      <text x="13" y="34" font-size="11" font-weight="700" fill="#ffffff">Dart</text>
+      <text x="13" y="46" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.82">62.9%</text>
+    </g>
+    <g class="tile" style="animation-delay:0.17s">
+      <title>TypeScript: 20.1%</title>
+      <rect x="258" y="19" width="111" height="164" rx="4" fill="#3178c6" fill-opacity="0.92"/>
+      <text x="263" y="34" font-size="11" font-weight="700" fill="#ffffff">TypeScript</text>
+      <text x="263" y="46" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.82">20.1%</text>
+    </g>
+    <g class="tile" style="animation-delay:0.20s">
+      <title>JavaScript: 9.1%</title>
+      <rect x="372" y="19" width="61" height="164" rx="4" fill="#f1e05a" fill-opacity="0.92"/>
+      <text x="377" y="32" font-size="9.5" font-weight="700" fill="#0d1117">JavaScri…</text>
+      <text x="377" y="46" font-size="10" font-weight="600" fill="#0d1117" fill-opacity="0.82">9.1%</text>
+    </g>
+    <g class="tile" style="animation-delay:0.23s">
+      <title>CSS: 0.6%</title>
+      <rect x="258" y="186" width="110" height="10" rx="4" fill="#663399" fill-opacity="0.92"/>
+      
+      
+    </g>
+    <g class="tile" style="animation-delay:0.26s">
+      <title>HTML: 0.3%</title>
+      <rect x="371" y="186" width="62" height="10" rx="4" fill="#e34c26" fill-opacity="0.92"/>
+      
+      
+    </g>
+    <g class="tile" style="animation-delay:0.29s">
+      <title>C#: 3.8%</title>
+      <rect x="444" y="19" width="52" height="91" rx="4" fill="#7355dd" fill-opacity="0.92"/>
+      <text x="449" y="32" font-size="9.5" font-weight="700" fill="#ffffff">C#</text>
+      <text x="449" y="46" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.82">3.8%</text>
+    </g>
+    <g class="tile" style="animation-delay:0.32s">
+      <title>Ruby: 3.2%</title>
+      <rect x="444" y="113" width="52" height="81" rx="4" fill="#701516" fill-opacity="0.92"/>
+      <text x="449" y="126" font-size="9.5" font-weight="700" fill="#ffffff">Ruby</text>
+      <text x="449" y="140" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.82">3.2%</text>
+    </g>
+    
+  </g>
+</svg>
