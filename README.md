@@ -1,5 +1,7 @@
 # ez-profile-lang-graphs
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/Evgenii-Zinner)
+
 A reusable GitHub Action that groups your GitHub repository languages into **5 descriptive engineering domains** (`Web`, `Mobile`, `Systems`, `Backend`, `Data & Ops`) and generates animated SVG charts straight in your profile repository—**$0 hosting, zero expiring Cloudflare/Vercel infrastructure**.
 
 <table>
@@ -122,7 +124,7 @@ The built-in `GITHUB_TOKEN` only sees public repositories. To include private re
 
 ```bash
 bun install
-bun run build       # bundles dist/action.mjs for Node 20
+bun run build       # bundles dist/action.mjs for Node 24
 bun run check       # runs Biome lint & format check
 bun run typecheck   # runs TypeScript check
 ```
